@@ -10,10 +10,9 @@
     <script>
       (function() {
         try {
-          // Get stored theme or system preference
+          // Get stored theme, default to light mode (ignoring system preference)
           const storedTheme = localStorage.getItem('theme');
-          const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-          const theme = storedTheme || (prefersDark ? 'dark' : 'light');
+          const theme = storedTheme || 'light';
 
           // Apply theme before React renders
           if (theme === 'dark') {
