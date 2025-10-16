@@ -28,7 +28,7 @@ const STEPS = [
 export const HowItWorksSection = () => {
   return (
     <section className="relative py-20">
-      <div className="mx-auto flex max-w-6xl flex-col gap-16 px-4 sm:px-6">
+      <div className="section-container">
         <SectionHeading
           id="workflow"
           eyebrow="Cách hoạt động"

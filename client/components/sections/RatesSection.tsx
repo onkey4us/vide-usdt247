@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
-import { Activity, Timer, Wallet } from "lucide-react";
+import { Activity, Timer, Wallet } from "lucide-react"; // Wallet dùng cho Buy/Sell card
 
-const RATE_ITEMS = [
-  {
-    label: "Tỷ giá hôm nay",
-    value: "1 USDT ≈ 23,500 VND",
-    note: "(cập nhật mỗi phút)",
-    icon: Wallet,
-  },
+interface ExchangeRate {
+  created_at: string;
+  buy: number;
+  sell: number;
+}
+
+const RATE_ITEMS_BASE = [
   {
     label: "Phí giao dịch",
     value: "từ 0.5%",
@@ -24,11 +24,24 @@ const RATE_ITEMS = [
 
 export const RatesSection = () => {
   const [lastUpdated, setLastUpdated] = useState(() => new Date());
+  const [exchangeRate, setExchangeRate] = useState<ExchangeRate | null>(null);
+
+  const fetchExchangeRates = async () => {
+    try {
+      const response = await fetch(
+        "https://iakzvzwriyxyshfggbwu.supabase.co/functions/v1/get_exchange_rates"
+      );
+      const data: ExchangeRate = await response.json();
+      setExchangeRate(data);
+      setLastUpdated(new Date());
+    } catch (error) {
+      console.error("Failed to fetch exchange rates:", error);
+    }
+  };
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setLastUpdated(new Date());
-    }, 60_000);
+    fetchExchangeRates();
+    const interval = setInterval(fetchExchangeRates, 60_000);
 
     return () => clearInterval(interval);
   }, []);
@@ -38,9 +51,13 @@ export const RatesSection = () => {
     minute: "2-digit",
   }).format(lastUpdated);
 
+  const RATE_ITEMS = [
+    ...RATE_ITEMS_BASE,
+  ];
+
   return (
-    <section className="relative py-20">
-      <div className="mx-auto flex max-w-6xl flex-col gap-12 px-4 sm:px-6">
+    <section id="rates" className="relative py-20">
+      <div className="section-container">
         <div className="space-y-6">
           <span className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.28em] text-primary">
             Cập nhật {formattedTime}
@@ -56,6 +73,35 @@ export const RatesSection = () => {
         </div>
 
         <div className="grid gap-6 md:grid-cols-3">
+          {/* Buy/Sell Combined Card */}
+          <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-background/60 backdrop-blur-xl transition hover:border-primary/40 md:col-span-2">
+            <div className="absolute -right-12 -top-12 h-24 w-24 rounded-full bg-primary/10 blur-3xl" />
+            <div className="grid grid-cols-2 gap-0">
+              {/* Buy Side */}
+              <div className="border-r border-white/5 p-8">
+                <div className="flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.24em] text-green-400/80">
+                  <Wallet className="h-4 w-4" />
+                  Tỷ giá mua (Buy)
+                </div>
+                <p className="mt-6 text-2xl font-semibold text-foreground">
+                  {exchangeRate ? `1 USDT ≈ ${exchangeRate.buy.toLocaleString("vi-VN")} VND` : "Đang tải..."}
+                </p>
+                <p className="mt-3 text-sm text-muted-foreground">(cập nhật mỗi phút)</p>
+              </div>
+              {/* Sell Side */}
+              <div className="p-8">
+                <div className="flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.24em] text-orange-400/80">
+                  <Wallet className="h-4 w-4" />
+                  Tỷ giá bán (Sell)
+                </div>
+                <p className="mt-6 text-2xl font-semibold text-foreground">
+                  {exchangeRate ? `1 USDT ≈ ${exchangeRate.sell.toLocaleString("vi-VN")} VND` : "Đang tải..."}
+                </p>
+                <p className="mt-3 text-sm text-muted-foreground">(cập nhật mỗi phút)</p>
+              </div>
+            </div>
+          </div>
+
           {RATE_ITEMS.map((item) => {
             const Icon = item.icon;
             return (

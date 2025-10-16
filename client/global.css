@@ -126,3 +126,17 @@
     white-space: pre;
   }
 }
+
+@layer components {
+  /**
+   * Standardized container pattern for all sections.
+   * Provides consistent max-width, responsive padding, and vertical spacing.
+   */
+  .section-container {
+    @apply mx-auto flex max-w-6xl flex-col gap-10 px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-container-narrow {
+    @apply mx-auto flex max-w-5xl flex-col gap-10 px-4 sm:px-6 lg:px-8;
+  }
+}

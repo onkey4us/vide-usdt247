@@ -29,9 +29,9 @@ export const HeroSection = () => {
     fetchRates();
   }, []);
   return (
-    <section className="relative overflow-hidden pt-8 pb-24">
+    <section className="relative overflow-hidden pt-8 pb-20">
       <div className="absolute inset-0 -z-10 bg-hero-gradient opacity-80 blur-3xl" />
-      <div className="relative mx-auto flex max-w-6xl flex-col gap-12 px-4 sm:px-6 lg:flex-row lg:items-center lg:gap-16">
+      <div className="relative section-container lg:flex-row lg:items-center lg:gap-16">
         <div className="flex-1 space-y-8">
           <span className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-4 py-1 text-xs font-semibold uppercase tracking-[0.28em] text-primary">
             Bot Telegram 24/7

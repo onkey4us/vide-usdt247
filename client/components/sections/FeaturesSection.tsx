@@ -33,7 +33,7 @@ export const FeaturesSection = () => {
   return (
     <section className="relative overflow-hidden py-20">
       <div className="absolute inset-x-0 top-0 -z-10 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
-      <div className="mx-auto flex max-w-6xl flex-col gap-16 px-4 sm:px-6">
+      <div className="section-container">
         <SectionHeading
           id="features"
           eyebrow="Vì sao chọn USDT247?"

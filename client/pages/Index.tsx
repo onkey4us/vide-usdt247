@@ -1,3 +1,4 @@
+import { BankSection } from "@/components/sections/BankSection";
 import { BrandSection } from "@/components/sections/BrandSection";
 import { FeaturesSection } from "@/components/sections/FeaturesSection";
 import { FinalCtaSection } from "@/components/sections/FinalCtaSection";
@@ -14,6 +15,7 @@ export default function Index() {
       <FeaturesSection />
       <HowItWorksSection />
       <RatesSection />
+      <BankSection />
       <TestimonialsSection />
       <FaqSection />
       <BrandSection />

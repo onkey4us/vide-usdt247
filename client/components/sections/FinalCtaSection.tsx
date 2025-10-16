@@ -8,9 +8,9 @@ const TELEGRAM_SUPPORT_URL = "https://t.me/USDT247support";
 
 export const FinalCtaSection = () => {
   return (
-    <section className="relative py-24">
+    <section className="relative py-20">
       <div className="absolute inset-x-0 top-0 -z-10 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
-      <div className="mx-auto max-w-5xl px-4 sm:px-6">
+      <div className="section-container">
         <div
           id="contact"
           className="relative overflow-hidden rounded-3xl border border-white/10 bg-hero-gradient p-10 text-center shadow-soft-glow backdrop-blur-2xl sm:p-16"

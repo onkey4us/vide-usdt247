@@ -23,7 +23,7 @@ export const TestimonialsSection = () => {
   return (
     <section className="relative overflow-hidden py-20">
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_bottom,_rgba(16,185,129,0.12),_rgba(7,11,20,0))]" />
-      <div className="mx-auto flex max-w-6xl flex-col gap-16 px-4 sm:px-6">
+      <div className="section-container">
         <SectionHeading
           eyebrow="Cảm nhận người dùng"
           title="Được cộng đồng trader USDT tin tưởng"

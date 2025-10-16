@@ -3,7 +3,7 @@ import { SectionHeading } from "@/components/sections/SectionHeading";
 export const BrandSection = () => {
   return (
     <section className="relative py-20">
-      <div className="mx-auto flex max-w-5xl flex-col gap-10 px-4 sm:px-6">
+      <div className="section-container">
         <SectionHeading
           eyebrow="Giới thiệu thương hiệu"
           title="USDT247 – Giao dịch USDT tự động cho người dùng Việt"

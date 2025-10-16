@@ -32,7 +32,7 @@ const FAQ_ITEMS = [
 export const FaqSection = () => {
   return (
     <section className="relative py-20">
-      <div className="mx-auto flex max-w-5xl flex-col gap-12 px-4 sm:px-6">
+      <div className="section-container">
         <SectionHeading
           id="faq"
           eyebrow="FAQ"
