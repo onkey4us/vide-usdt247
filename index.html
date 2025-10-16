@@ -5,6 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mua bán USDT nhanh nhất — An toàn & Giá tốt USDT247.SHOP</title>
     <link rel="icon" type="image/png" href="/logo/logo.png" />
+
+    <!-- Theme initialization script - prevents FOUC (Flash of Unstyled Content) -->
+    <script>
+      (function() {
+        try {
+          // Get stored theme or system preference
+          const storedTheme = localStorage.getItem('theme');
+          const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          const theme = storedTheme || (prefersDark ? 'dark' : 'light');
+
+          // Apply theme before React renders
+          if (theme === 'dark') {
+            document.documentElement.classList.add('dark');
+          } else {
+            document.documentElement.classList.remove('dark');
+          }
+        } catch (e) {
+          // Fallback if localStorage is not available
+          console.warn('Failed to initialize theme:', e);
+        }
+      })();
+    </script>
   </head>
 
   <body>

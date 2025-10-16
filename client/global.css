@@ -12,23 +12,23 @@
    * A different format will require also updating the theme in tailwind.config.ts.
   */
   :root {
-    --background: 225 58% 6%;
-    --foreground: 210 33% 96%;
+    --background: 0 0% 100%;
+    --foreground: 210 33% 10%;
 
-    --card: 225 52% 10%;
-    --card-foreground: 210 33% 96%;
+    --card: 0 0% 98%;
+    --card-foreground: 210 33% 10%;
 
-    --popover: 225 54% 9%;
-    --popover-foreground: 210 33% 96%;
+    --popover: 0 0% 98%;
+    --popover-foreground: 210 33% 10%;
 
     --primary: 161 84% 45%;
     --primary-foreground: 210 33% 98%;
 
-    --secondary: 220 41% 18%;
-    --secondary-foreground: 210 26% 92%;
+    --secondary: 220 41% 85%;
+    --secondary-foreground: 210 26% 20%;
 
-    --muted: 220 35% 20%;
-    --muted-foreground: 220 14% 72%;
+    --muted: 220 35% 90%;
+    --muted-foreground: 220 14% 40%;
 
     --accent: 199 74% 58%;
     --accent-foreground: 225 72% 8%;
@@ -36,19 +36,19 @@
     --destructive: 0 72% 50%;
     --destructive-foreground: 210 33% 96%;
 
-    --border: 220 36% 24%;
-    --input: 220 36% 24%;
+    --border: 220 36% 85%;
+    --input: 220 36% 90%;
     --ring: 160 84% 46%;
 
     --radius: 0.75rem;
 
-    --sidebar-background: 225 58% 7%;
-    --sidebar-foreground: 210 33% 92%;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 210 33% 15%;
     --sidebar-primary: 161 84% 45%;
     --sidebar-primary-foreground: 210 33% 98%;
-    --sidebar-accent: 219 46% 18%;
+    --sidebar-accent: 219 46% 85%;
     --sidebar-accent-foreground: 210 33% 96%;
-    --sidebar-border: 220 36% 24%;
+    --sidebar-border: 220 36% 85%;
     --sidebar-ring: 160 84% 46%;
   }
 
@@ -98,7 +98,7 @@
 
   body {
     @apply bg-background text-foreground font-sans antialiased;
-    background-image: radial-gradient(120% 120% at 10% 0%, rgba(16, 185, 129, 0.12), rgba(8, 13, 26, 0)), radial-gradient(120% 120% at 90% 10%, rgba(14, 165, 233, 0.16), rgba(8, 13, 26, 0));
+    background-image: radial-gradient(120% 120% at 10% 0%, rgba(16, 185, 129, 0.08), rgba(255, 255, 255, 0)), radial-gradient(120% 120% at 90% 10%, rgba(14, 165, 233, 0.08), rgba(255, 255, 255, 0));
     background-attachment: fixed;
   }
 

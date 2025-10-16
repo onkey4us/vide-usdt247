@@ -32,7 +32,7 @@ const FEATURES = [
 export const FeaturesSection = () => {
   return (
     <section className="relative overflow-hidden py-20">
-      <div className="absolute inset-x-0 top-0 -z-10 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
+      <div className="absolute inset-x-0 top-0 -z-10 h-px bg-gradient-to-r from-transparent via-border/20 to-transparent" />
       <div className="section-container">
         <SectionHeading
           id="features"
@@ -46,7 +46,7 @@ export const FeaturesSection = () => {
             return (
               <div
                 key={feature.title}
-                className="group relative overflow-hidden rounded-3xl border border-white/10 bg-card/70 p-8 shadow-[0_35px_120px_-60px_rgba(16,185,129,0.45)] backdrop-blur-xl transition hover:-translate-y-1 hover:border-primary/60"
+                className="group relative overflow-hidden rounded-3xl border border-border bg-card/70 p-8 shadow-[0_35px_120px_-60px_rgba(16,185,129,0.45)] backdrop-blur-xl transition hover:-translate-y-1 hover:border-primary/60"
               >
                 <div className="absolute -right-16 top-8 h-32 w-32 rounded-full bg-primary/10 blur-3xl transition-opacity group-hover:opacity-80" />
                 <div className="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/10 text-primary">

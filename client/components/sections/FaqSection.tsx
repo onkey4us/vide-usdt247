@@ -42,13 +42,13 @@ export const FaqSection = () => {
         <Accordion
           type="single"
           collapsible
-          className="overflow-hidden rounded-3xl border border-white/10 bg-card/70 backdrop-blur-xl"
+          className="overflow-hidden rounded-3xl border border-border bg-card/70 backdrop-blur-xl"
         >
           {FAQ_ITEMS.map((item, index) => (
             <AccordionItem
               key={item.question}
               value={`item-${index}`}
-              className="border-white/5"
+              className="border-border/50"
             >
               <AccordionTrigger className="px-6 text-left text-base text-foreground sm:text-lg">
                 {item.question}

@@ -33,7 +33,7 @@ export const TestimonialsSection = () => {
           {TESTIMONIALS.map((testimonial) => (
             <figure
               key={testimonial.name}
-              className="relative flex h-full flex-col justify-between overflow-hidden rounded-3xl border border-white/10 bg-card/70 p-8 shadow-[0_40px_120px_-70px_rgba(79,70,229,0.45)] backdrop-blur-xl"
+              className="relative flex h-full flex-col justify-between overflow-hidden rounded-3xl border border-border bg-card/70 p-8 shadow-[0_40px_120px_-70px_rgba(79,70,229,0.45)] backdrop-blur-xl"
             >
               <blockquote className="text-lg font-medium text-foreground">
                 “{testimonial.quote}”

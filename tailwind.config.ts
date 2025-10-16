@@ -57,6 +57,7 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        "security-bg": "hsl(161.13deg 85.09% 44.71%)",
       },
       fontFamily: {
         sans: ["Inter", "sans-serif"],

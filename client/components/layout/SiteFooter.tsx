@@ -7,7 +7,7 @@ const TELEGRAM_SUPPORT_URL = "https://t.me/USDT247support";
 
 export const SiteFooter = () => {
   return (
-    <footer className="mt-24 border-t border-white/10 bg-background/80 backdrop-blur-xl">
+    <footer className="mt-24 border-t border-border bg-background/80 backdrop-blur-xl">
       <div className="mx-auto flex max-w-6xl flex-col gap-12 px-4 py-12 sm:px-6 md:flex-row md:items-center md:justify-between">
         <div className="max-w-xl space-y-4">
           <div className="flex items-center gap-3 text-lg font-semibold text-foreground">

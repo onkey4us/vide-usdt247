@@ -3,7 +3,7 @@ import { SectionHeading } from "@/components/sections/SectionHeading";
 export const BankSection = () => {
   return (
     <section className="relative overflow-hidden bg-card/50 py-20">
-      <div className="absolute inset-x-0 top-0 -z-10 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
+      <div className="absolute inset-x-0 top-0 -z-10 h-px bg-gradient-to-r from-transparent via-border/20 to-transparent" />
       <div className="section-container">
         {/* Mobile Layout */}
         <div className="md:hidden">
@@ -14,7 +14,7 @@ export const BankSection = () => {
             description="Hỗ trợ đa dạng phương thức thanh toán, giúp bạn giao dịch USDT một cách linh hoạt và tiện lợi."
           />
           <div className="mt-8 flex flex-col items-center justify-center">
-            <div className="relative w-full overflow-hidden rounded-3xl border border-white/10 shadow-[0_35px_120px_-60px_rgba(16,185,129,0.45)]">
+            <div className="relative w-full overflow-hidden rounded-3xl border border-border shadow-[0_35px_120px_-60px_rgba(16,185,129,0.45)]">
               <img
                 src="/img/bank/bank-img-DrEv4rsG.webp"
                 alt="Liên kết ngân hàng và ví điện tử"
@@ -37,7 +37,7 @@ export const BankSection = () => {
               Hỗ trợ đa dạng phương thức thanh toán, giúp bạn giao dịch USDT một cách linh hoạt và tiện lợi.
             </p>
           </div>
-          <div className="relative overflow-hidden rounded-3xl border border-white/10 shadow-[0_35px_120px_-60px_rgba(16,185,129,0.45)]">
+          <div className="relative overflow-hidden rounded-3xl border border-border shadow-[0_35px_120px_-60px_rgba(16,185,129,0.45)]">
             <img
               src="/img/bank/bank-img-DrEv4rsG.webp"
               alt="Liên kết ngân hàng và ví điện tử"

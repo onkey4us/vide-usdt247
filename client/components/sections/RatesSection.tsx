@@ -74,11 +74,11 @@ export const RatesSection = () => {
 
         <div className="grid gap-6 md:grid-cols-3">
           {/* Buy/Sell Combined Card */}
-          <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-background/60 backdrop-blur-xl transition hover:border-primary/40 md:col-span-2">
+          <div className="relative overflow-hidden rounded-2xl border border-border bg-background/60 backdrop-blur-xl transition hover:border-primary/40 md:col-span-2">
             <div className="absolute -right-12 -top-12 h-24 w-24 rounded-full bg-primary/10 blur-3xl" />
             <div className="grid grid-cols-2 gap-0">
               {/* Buy Side */}
-              <div className="border-r border-white/5 p-8">
+              <div className="border-r border-border/50 p-8">
                 <div className="flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.24em] text-green-400/80">
                   <Wallet className="h-4 w-4" />
                   Tỷ giá mua (Buy)
@@ -107,7 +107,7 @@ export const RatesSection = () => {
             return (
               <div
                 key={item.label}
-                className="relative overflow-hidden rounded-2xl border border-white/10 bg-background/60 p-8 backdrop-blur-xl transition hover:border-primary/40"
+                className="relative overflow-hidden rounded-2xl border border-border bg-background/60 p-8 backdrop-blur-xl transition hover:border-primary/40"
               >
                 <div className="absolute -right-12 -top-12 h-24 w-24 rounded-full bg-primary/10 blur-3xl" />
                 <div className="flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.24em] text-primary/80">

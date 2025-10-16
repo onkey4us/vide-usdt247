@@ -39,7 +39,7 @@ export const HowItWorksSection = () => {
           {STEPS.map((step, index) => (
             <div
               key={step.title}
-              className="relative overflow-hidden rounded-3xl border border-white/10 bg-background/60 p-8 backdrop-blur-xl transition hover:-translate-y-1 hover:border-primary/60"
+              className="relative overflow-hidden rounded-3xl border border-border bg-background/60 p-8 backdrop-blur-xl transition hover:-translate-y-1 hover:border-primary/60"
             >
               <span className="absolute -top-20 right-10 h-36 w-36 rounded-full bg-primary/10 blur-3xl" />
               <div className="text-sm font-semibold uppercase tracking-[0.24em] text-primary/80">

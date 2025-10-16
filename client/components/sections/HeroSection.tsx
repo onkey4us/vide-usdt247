@@ -61,7 +61,7 @@ export const HeroSection = () => {
               href={TELEGRAM_COMMUNITY_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="group inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-6 py-3 text-base font-semibold text-foreground transition hover:bg-white/10"
+              className="group inline-flex items-center gap-2 rounded-full border border-border bg-muted px-6 py-3 text-base font-semibold text-foreground transition hover:bg-muted/80"
             >
               🔵 Tham gia cộng đồng USDT247
               <ArrowUpRight className="h-5 w-5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
@@ -83,7 +83,7 @@ export const HeroSection = () => {
           </div>
         </div>
         <div className="relative flex-1">
-          <div className="relative rounded-3xl border border-white/10 bg-card/80 p-8 shadow-soft-glow backdrop-blur-xl">
+          <div className="relative rounded-3xl border border-border bg-card/80 p-8 shadow-soft-glow backdrop-blur-xl">
             <div className="flex flex-col gap-6">
               <div className="flex items-center justify-between">
                 <div>
@@ -94,7 +94,7 @@ export const HeroSection = () => {
                   Tự động
                 </span>
               </div>
-              <div className="grid gap-4 rounded-2xl border border-white/5 bg-background/60 p-5">
+              <div className="grid gap-4 rounded-2xl border border-border/50 bg-background/60 p-5">
                 <div className="flex items-center justify-between text-sm text-muted-foreground">
                   <span>Ngân hàng Việt hỗ trợ</span>
                   <span className="text-base font-semibold text-foreground">30+</span>
@@ -107,7 +107,7 @@ export const HeroSection = () => {
                   <span>Thời gian xử lý trung bình</span>
                   <span className="text-base font-semibold text-foreground">3 phút</span>
                 </div>
-                <div className="border-t border-white/5 pt-4">
+                <div className="border-t border-border/50 pt-4">
                   <p className="mb-3 text-xs font-semibold uppercase tracking-wider text-muted-foreground">Giá USDT hiện tại</p>
                   <div className="flex gap-4">
                     <div className="flex-1">
@@ -125,7 +125,7 @@ export const HeroSection = () => {
                   </div>
                 </div>
               </div>
-              <div className="rounded-2xl border border-primary/30 bg-primary/10 p-5 text-sm text-primary-foreground/90">
+              <div className="rounded-2xl border border-primary/50 bg-security-bg p-5 text-sm text-primary-foreground">
                 <p className="font-semibold text-primary-foreground">Bảo mật Zero-Knowledge</p>
                 <p className="mt-2 text-primary-foreground/80">
                   Xác thực đa lớp với zk-SNARK + SSL, dữ liệu mã hóa đầu-cuối.

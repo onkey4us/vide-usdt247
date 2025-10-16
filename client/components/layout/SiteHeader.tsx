@@ -1,9 +1,10 @@
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Moon, Sun } from "lucide-react";
 
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import logoImg from "/logo/logo.png";
+import { useTheme } from "@/hooks/use-theme";
 
 const NAV_LINKS = [
   { label: "Vì sao USDT247?", href: "#features" },
@@ -17,12 +18,13 @@ const TELEGRAM_SUPPORT_URL = "https://t.me/USDT247support";
 
 export const SiteHeader = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { theme, toggleTheme } = useTheme();
 
   const handleToggle = () => setIsMenuOpen((prev) => !prev);
   const handleClose = () => setIsMenuOpen(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-white/10 bg-background/80 backdrop-blur-xl">
+    <header className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur-xl">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-6 px-4 py-1 sm:px-6">
         <a
           href="/"
@@ -57,6 +59,18 @@ export const SiteHeader = () => {
           >
             Liên hệ hỗ trợ
           </a>
+          <button
+            type="button"
+            onClick={toggleTheme}
+            className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-border bg-card text-foreground transition-colors hover:bg-muted"
+            aria-label="Toggle theme"
+          >
+            {theme === "light" ? (
+              <Moon className="h-5 w-5" />
+            ) : (
+              <Sun className="h-5 w-5" />
+            )}
+          </button>
           <a
             href={TELEGRAM_BOT_URL}
             target="_blank"
@@ -73,21 +87,21 @@ export const SiteHeader = () => {
         <button
           type="button"
           onClick={handleToggle}
-          className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 text-foreground transition-colors hover:bg-white/5 md:hidden"
+          className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-border text-foreground transition-colors hover:bg-muted md:hidden"
           aria-label="Toggle navigation"
         >
           {isMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
         </button>
       </div>
       {isMenuOpen && (
-        <div className="border-t border-white/10 bg-background/95 backdrop-blur-xl md:hidden">
+        <div className="border-t border-border bg-background/95 backdrop-blur-xl md:hidden">
           <nav className="flex flex-col gap-2 px-4 py-4 text-sm font-medium text-muted-foreground">
             {NAV_LINKS.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
                 onClick={handleClose}
-                className="rounded-xl px-3 py-2 transition-colors hover:bg-white/5 hover:text-foreground"
+                className="rounded-xl px-3 py-2 transition-colors hover:bg-muted hover:text-foreground"
               >
                 {link.label}
               </a>
@@ -96,10 +110,27 @@ export const SiteHeader = () => {
               href={TELEGRAM_SUPPORT_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-xl px-3 py-2 transition-colors hover:bg-white/5 hover:text-foreground"
+              className="rounded-xl px-3 py-2 transition-colors hover:bg-muted hover:text-foreground"
             >
               Liên hệ hỗ trợ
             </a>
+            <button
+              type="button"
+              onClick={toggleTheme}
+              className="flex items-center gap-2 rounded-xl px-3 py-2 transition-colors hover:bg-muted hover:text-foreground"
+            >
+              {theme === "light" ? (
+                <>
+                  <Moon className="h-4 w-4" />
+                  <span>Dark Mode</span>
+                </>
+              ) : (
+                <>
+                  <Sun className="h-4 w-4" />
+                  <span>Light Mode</span>
+                </>
+              )}
+            </button>
             <a
               href={TELEGRAM_BOT_URL}
               target="_blank"
