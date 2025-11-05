@@ -13,8 +13,8 @@ const NAV_LINKS = [
   { label: "FAQ", href: "#faq" },
 ];
 
-const TELEGRAM_BOT_URL = "https://t.me/USDT247bot";
-const TELEGRAM_SUPPORT_URL = "https://t.me/USDT247support";
+const TELEGRAM_BOT_URL = "https://t.me/usdt247shopbot";
+const TELEGRAM_SUPPORT_URL = "https://t.me/usdt247shopsupport";
 
 export const SiteHeader = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

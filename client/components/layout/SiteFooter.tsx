@@ -2,8 +2,8 @@ import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import logoImg from "/logo/logo.png";
 
-const TELEGRAM_BOT_URL = "https://t.me/USDT247bot";
-const TELEGRAM_SUPPORT_URL = "https://t.me/USDT247support";
+const TELEGRAM_BOT_URL = "https://t.me/usdt247shopbot";
+const TELEGRAM_SUPPORT_URL = "https://t.me/usdt247shopsupport";
 
 export const SiteFooter = () => {
   return (
@@ -37,7 +37,7 @@ export const SiteFooter = () => {
               rel="noopener noreferrer"
               className="transition-colors hover:text-foreground"
             >
-              💬 @USDT247support
+              💬 @usdt247shopsupport
             </a>
             <a
               href="https://www.usdt247.shop"

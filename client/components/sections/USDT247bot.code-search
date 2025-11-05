@@ -1,0 +1,29 @@
+# Query: USDT247bot
+# ContextLines: 1
+
+5 results - 5 files
+
+vide-usdt247/client/components/layout/SiteFooter.tsx:
+  4  
+  5: const TELEGRAM_BOT_URL = "https://t.me/usdt247shopbot";
+  6  const TELEGRAM_SUPPORT_URL = "https://t.me/USDT247support";
+
+vide-usdt247/client/components/layout/SiteHeader.tsx:
+  15  
+  16: const TELEGRAM_BOT_URL = "https://t.me/usdt247shopbot";
+  17  const TELEGRAM_SUPPORT_URL = "https://t.me/USDT247support";
+
+vide-usdt247/client/components/sections/FinalCtaSection.tsx:
+  5  
+  6: const TELEGRAM_BOT_URL = "https://t.me/usdt247shopbot";
+  7  const TELEGRAM_SUPPORT_URL = "https://t.me/USDT247support";
+
+vide-usdt247/client/components/sections/HeroSection.tsx:
+  7  
+  8: const TELEGRAM_BOT_URL = "https://t.me/usdt247shopbot";
+  9  const TELEGRAM_COMMUNITY_URL = "https://t.me/USDT247community";
+
+vide-usdt247/client/components/sections/HowItWorksSection.tsx:
+  6  
+  7: const TELEGRAM_BOT_URL = "https://t.me/usdt247shopbot";
+  8  

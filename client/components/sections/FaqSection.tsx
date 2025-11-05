@@ -15,7 +15,7 @@ const FAQ_ITEMS = [
   {
     question: "Thời gian giao dịch bao lâu?",
     answer:
-      "Trung bình 1–5 phút, tùy ngân hàng và mạng lưới blockchain. Bot sẽ thông báo ngay khi giao dịch hoàn tất.",
+      "Trung bình 2-3 phút, tùy ngân hàng và mạng lưới blockchain. Bot sẽ thông báo ngay khi giao dịch hoàn tất.",
   },
   {
     question: "Có giới hạn giao dịch không?",

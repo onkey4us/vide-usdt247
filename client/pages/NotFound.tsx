@@ -37,7 +37,7 @@ const NotFound = () => {
           Về trang chủ
         </Link>
         <a
-          href="https://t.me/USDT247support"
+          href="https://t.me/usdt247shopsupport"
           target="_blank"
           rel="noopener noreferrer"
           className="rounded-full border border-white/15 bg-white/5 px-6 py-3 text-base font-semibold text-foreground transition hover:bg-white/10"

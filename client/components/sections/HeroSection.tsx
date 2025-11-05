@@ -5,7 +5,7 @@ import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { ExchangeRatesResponse } from "@shared/api";
 
-const TELEGRAM_BOT_URL = "https://t.me/USDT247bot";
+const TELEGRAM_BOT_URL = "https://t.me/usdt247shopbot";
 const TELEGRAM_COMMUNITY_URL = "https://t.me/USDT247community";
 const EXCHANGE_RATES_API = "https://iakzvzwriyxyshfggbwu.supabase.co/functions/v1/get_exchange_rates";
 
@@ -74,7 +74,7 @@ export const HeroSection = () => {
             </div>
             <div className="inline-flex items-center gap-2 font-medium text-foreground">
               <Zap className="h-4 w-4 text-primary" />
-              ⚡ Giao dịch chỉ 1–5 phút
+              ⚡ Giao dịch chỉ 2-3 phút
             </div>
             <div className="inline-flex items-center gap-2 font-medium text-foreground">
               <Lock className="h-4 w-4 text-primary" />
