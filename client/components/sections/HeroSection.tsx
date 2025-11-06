@@ -74,7 +74,7 @@ export const HeroSection = () => {
             </div>
             <div className="inline-flex items-center gap-2 font-medium text-foreground">
               <Zap className="h-4 w-4 text-primary" />
-              ⚡ Giao dịch chỉ 2-3 phút
+              ⚡ Giao dịch chỉ 3-30s
             </div>
             <div className="inline-flex items-center gap-2 font-medium text-foreground">
               <Lock className="h-4 w-4 text-primary" />
@@ -105,7 +105,7 @@ export const HeroSection = () => {
                 </div>
                 <div className="flex items-center justify-between text-sm text-muted-foreground">
                   <span>Thời gian xử lý trung bình</span>
-                  <span className="text-base font-semibold text-foreground">3 phút</span>
+                  <span className="text-base font-semibold text-foreground">3-30s</span>
                 </div>
                 <div className="border-t border-border/50 pt-4">
                   <p className="mb-3 text-xs font-semibold uppercase tracking-wider text-muted-foreground">Giá USDT hiện tại</p>

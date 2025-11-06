@@ -16,7 +16,7 @@ const RATE_ITEMS_BASE = [
   },
   {
     label: "Thời gian xử lý trung bình",
-    value: "3 phút",
+    value: "3-30s",
     note: "Thực tế 1–5 phút tùy ngân hàng",
     icon: Timer,
   },
