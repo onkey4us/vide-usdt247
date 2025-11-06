@@ -13,7 +13,7 @@ const STEPS = [
     image: "/img/HowItWorksSection/B1.jpg",
   },
   {
-    title: "📥 Chỉ với vài click, bạn có thể mua hoặc bán USDT trong vài giây",
+    title: "📥 Hoàn thành KYC để có thể Mua/Bán USDT ",
     description: "Chọn giao dịch mua hoặc bán USDT một cách nhanh chóng và dễ dàng.",
     image: "/img/HowItWorksSection/B2.jpg",
   },
